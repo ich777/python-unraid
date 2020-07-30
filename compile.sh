@@ -11,6 +11,7 @@ mkdir ${DATA_DIR}/python3.8.4rc1
 tar -C ${DATA_DIR}/python3.8.4rc1 --strip-components=1 -xf ${DATA_DIR}/python3.8.4rc1.tgz
 cd ${DATA_DIR}/python3.8.4rc1
 ./configure --prefix=/usr
+make -j${CPU_COUNT}
 DESTDIR=${DATA_DIR}/Python3.8.4rc1 make install
 
 pip3 install gobject PyGObject -t ${DATA_DIR}/Python3.8.4rc1/usr/lib/python3.8/site-packages/
