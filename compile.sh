@@ -6,7 +6,7 @@ apt-get update
 apt-get install --no-install-recommends zlib1g-dev libbz2-dev liblzma-dev libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev libgdbm-dev liblzma-dev tk8.6-dev lzma lzma-dev libgdbm-dev python3-pip libcairo2-dev python3-dev libgirepository1.0-dev python3-cairo-dev libgdbm-compat-dev
 
 cd ${DATA_DIR}
-wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/python$PYTHON_V.tgz https://www.python.org/ftp/python/3.8.4/Python-3.8.4rc1.tgz
+wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/python$PYTHON_V.tgz https://www.python.org/ftp/python/${PYTHON_V%r*}/Python-$PYTHON_V.tgz
 
 mkdir ${DATA_DIR}/python$PYTHON_V
 tar -C ${DATA_DIR}/python$PYTHON_V --strip-components=1 -xf ${DATA_DIR}/python$PYTHON_V.tgz
