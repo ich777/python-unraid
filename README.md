@@ -1,3 +1,3 @@
-# For Unraid v6.9.x
+# For Unraid v6.8.x
 
-Precompile Python 3.8.4rc1 for Unraid-Kernel-Helper for iSCSI builds
+Precompile Python 3.7.3 for Unraid-Kernel-Helper for iSCSI builds
