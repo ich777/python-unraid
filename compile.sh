@@ -33,5 +33,6 @@ strip -s ${DATA_DIR}/Python$PYTHON_V/usr/lib/* ${DATA_DIR}/Python$PYTHON_V/usr/b
 makepkg ../python-$PYTHON_V-x86_64-1.tgz  # twice NO!
 
 rm -R ${DATA_DIR}/python$PYTHON_V
-rm -R${DATA_DIR}/Python$PYTHON_V
+rm -R ${DATA_DIR}/Python$PYTHON_V
+rm /sbin/makepkg
 rm ${DATA_DIR}/python$PYTHON_V.tgz
