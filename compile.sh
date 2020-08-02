@@ -18,7 +18,7 @@ cd ${DATA_DIR}/python$PYTHON_V
 make -j${CPU_COUNT}
 DESTDIR=${DATA_DIR}/Python$PYTHON_V make install
 
-pip3 install gobject PyGObject -t ${DATA_DIR}/Python$PYTHON_V/usr/lib/python3.8/site-packages/
+pip3 install gobject PyGObject -t ${DATA_DIR}/Python$PYTHON_V/usr/lib/python*/site-packages/
 
 mkdir ${DATA_DIR}/Python$PYTHON_V/install
 tee ${DATA_DIR}/Python$PYTHON_V/install/slack-desc <<EOF
