@@ -1,3 +1,4 @@
+#!/bin/bash
 CPU_COUNT="$(grep -c ^processor /proc/cpuinfo)"
 PYTHON_V="3.7.3"
 echo "---Setting compile cores to $CPU_COUNT---"
