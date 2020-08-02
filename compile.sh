@@ -8,7 +8,7 @@ apt-get -y install --no-install-recommends zlib1g-dev libbz2-dev liblzma-dev lib
 
 cd ${DATA_DIR}
 wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/python$PYTHON_V.tgz https://www.python.org/ftp/python/${PYTHON_V%r*}/Python-$PYTHON_V.tgz
-wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/makepkg https://raw.githubusercontent.com/ich777/3.7.3/master/makepkg
+wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/makepkg https://github.com/ich777/python-unraid/raw/3.7.3/makepkg
 mv ${DATA_DIR}/makepkg /sbin/makepkg
 
 tar -C ${DATA_DIR}/python$PYTHON_V --strip-components=1 -xf ${DATA_DIR}/python$PYTHON_V.tgz
