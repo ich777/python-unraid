@@ -4,12 +4,13 @@ PYTHON_V="3.7.3"
 echo "---Setting compile cores to $CPU_COUNT---"
 
 apt-get update
-apt-get -y install --no-install-recommends zlib1g-dev libbz2-dev liblzma-dev libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev libgdbm-dev liblzma-dev tk8.6-dev lzma lzma-dev libgdbm-dev python3-pip libcairo2-dev python3-dev libgirepository1.0-dev python3-cairo-dev libgdbm-compat-dev
+apt-get -y install --no-install-recommends zlib1g-dev libbz2-dev liblzma-dev libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev libgdbm-dev liblzma-dev tk8.6-dev lzma lzma-dev libgdbm-dev python3-pip libcairo2-dev python3-dev libgirepository1.0-dev python3-cairo-dev libgdbm-compat-dev python3-wheel
 
 cd ${DATA_DIR}
 wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/python$PYTHON_V.tgz https://www.python.org/ftp/python/${PYTHON_V%r*}/Python-$PYTHON_V.tgz
 wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/makepkg https://github.com/ich777/python-unraid/raw/3.7.3/makepkg
 mv ${DATA_DIR}/makepkg /sbin/makepkg
+chmod 770 /sbin/makepkg
 
 mkdir ${DATA_DIR}/python$PYTHON_V
 tar -C ${DATA_DIR}/python$PYTHON_V --strip-components=1 -xf ${DATA_DIR}/python$PYTHON_V.tgz
