@@ -1,3 +1,3 @@
-# python3.8.4rc1
+# Custom Python builds for Unraid-Kernel-Helper for iSCSI builds
 
-Precompile Python 3.8.4rc1 for Unraid-Kernel-Helper
+Versions in the corresponding branches
