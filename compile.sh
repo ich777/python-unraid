@@ -28,7 +28,7 @@ python: Custom Python $PYTHON_V package for Unraid-Kernel-Helper by ich777
 EOF
 cd ${DATA_DIR}/Python$PYTHON_V
 strip -s ${DATA_DIR}/Python$PYTHON_V/usr/lib/* ${DATA_DIR}/Python$PYTHON_V/usr/bin/*
-makepkg ../python-$PYTHON_V-x86_64-1.tgz  # twice NO!
+n n | makepkg ../python-$PYTHON_V-x86_64-1.tgz  # twice NO!
 
 rm -R ${DATA_DIR}/python$PYTHON_V
 rm -R ${DATA_DIR}/Python$PYTHON_V
