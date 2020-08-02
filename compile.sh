@@ -11,6 +11,7 @@ wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/python$
 wget -q -nc --show-progress --progress=bar:force:noscroll -O ${DATA_DIR}/makepkg https://github.com/ich777/python-unraid/raw/3.7.3/makepkg
 mv ${DATA_DIR}/makepkg /sbin/makepkg
 
+mkdir ${DATA_DIR}/python$PYTHON_V
 tar -C ${DATA_DIR}/python$PYTHON_V --strip-components=1 -xf ${DATA_DIR}/python$PYTHON_V.tgz
 cd ${DATA_DIR}/python$PYTHON_V
 ./configure --prefix=/usr
