@@ -1,5 +1,5 @@
 CPU_COUNT="$(grep -c ^processor /proc/cpuinfo)"
-PYTHON_V="3.8.5"
+PYTHON_V="3.9.0"
 echo "---Setting compile cores to $CPU_COUNT---"
 
 apt-get update
